@@ -135,6 +135,24 @@ window.open(url,"_blank");
 }
 
 </script>
+  <script>
+
+function sendWhatsApp(){
+
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var message=document.getElementById("message").value;
+
+var url="https://wa.me/918547576987?text="
++"Name: "+encodeURIComponent(name)
++"%0AEmail: "+encodeURIComponent(email)
++"%0AMessage: "+encodeURIComponent(message);
+
+window.open(url,"_blank");
+
+}
+
+</script>
 </body>
 
 </html>
