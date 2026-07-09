@@ -3,6 +3,8 @@
 
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Products - As Solutions</title>
 
 <style>
@@ -14,138 +16,130 @@ box-sizing:border-box;
 }
 
 body{
-
 font-family:Arial;
 background:#111;
 color:white;
-
 }
-
 
 /* Navigation */
 
 nav{
-
-height:70px;
 background:black;
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
-padding:0 50px;
-
+padding:15px 50px;
 }
 
-
 .logo{
-
 font-size:30px;
 color:gold;
 font-weight:bold;
-
 }
-
 
 nav ul{
-
 display:flex;
-gap:30px;
 list-style:none;
-
+gap:25px;
 }
 
-
 nav ul li a{
-
 color:white;
 text-decoration:none;
 font-size:18px;
-
+font-weight:bold;
 }
 
+nav ul li a:hover{
+color:gold;
+}
 
-/* Product Section */
+/* Products */
 
 .products{
-
-padding:50px;
-
 display:flex;
 justify-content:center;
 gap:40px;
-
+flex-wrap:wrap;
+padding:50px 20px;
 }
 
-
 .card{
-
 background:white;
 color:black;
 width:300px;
 padding:20px;
-text-align:center;
 border-radius:15px;
-
+text-align:center;
+box-shadow:0 0 10px rgba(255,255,255,0.2);
 }
 
-
 .card img{
-
 width:100%;
 height:300px;
 object-fit:cover;
 border-radius:10px;
-
 }
-
 
 .card h2{
-
 margin:15px 0;
-
 }
 
+.card p{
+margin-bottom:15px;
+}
 
 .card button{
-
 background:red;
 color:white;
 border:none;
 padding:12px 30px;
 border-radius:8px;
 cursor:pointer;
-
+font-size:16px;
 }
-@media (max-width:768px){
 
-.product{
-flex-direction:column;
+.card button:hover{
+background:darkred;
+}
+
+/* Footer */
+
+footer{
+background:black;
 text-align:center;
+padding:20px;
+margin-top:40px;
 }
 
-.product img{
-width:90%;
-height:auto;
+footer p{
+margin:5px;
+font-size:16px;
 }
+
+/* Mobile */
+
+@media(max-width:768px){
 
 nav{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:10px;
+flex-direction:column;
+padding:15px;
 }
 
-button{
+nav ul{
+margin-top:10px;
+gap:15px;
+}
+
+.products{
+flex-direction:column;
+align-items:center;
+padding:20px;
+}
+
+.card{
 width:90%;
-}
-
-h1{
-font-size:32px;
-}
-
-p{
-font-size:18px;
+max-width:350px;
 }
 
 }
@@ -154,9 +148,7 @@ font-size:18px;
 
 </head>
 
-
 <body>
-
 
 <nav>
 
@@ -164,50 +156,53 @@ font-size:18px;
 As Solutions
 </div>
 
-
 <ul>
-
 <li><a href="index.html">Home</a></li>
-
 <li><a href="products.html">Products</a></li>
-
 <li><a href="contact.html">Contact</a></li>
-
 </ul>
-
 
 </nav>
 
-
-
 <section class="products">
 
-<!-- First Product -->
 <div class="card">
-<img src="image/perfume1.jpg.jpeg">
-<h2>As pookiee</h2>
-<p>Premium Fragrance</p>
+
+<img src="image/perfume1.jpg.jpeg" alt="As Pookiee Perfume">
+
+<h2>As Pookiee</h2>
+
+<p>Premium Imported Fragrance</p>
 
 <a href="product1.html">
 <button>View More</button>
 </a>
+
 </div>
 
-
-<!-- Second Product -->
 <div class="card">
-<img src="image/perfume2.jpg.jpeg">
+
+<img src="image/perfume2.jpg.jpeg" alt="As Asthetic Perfume">
+
 <h2>As Asthetic</h2>
-<p>Imported Fragrance</p>
+
+<p>Luxury Imported Fragrance</p>
 
 <a href="product2.html">
 <button>View More</button>
 </a>
-</div>
 
+</div>
 
 </section>
 
+<footer>
+
+<p>© 2026 As Solutions. All Rights Reserved.</p>
+
+<p>Email: assolutions@gmail.com | Phone: +91 8547576987</p>
+
+</footer>
 
 </body>
 
