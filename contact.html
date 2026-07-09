@@ -102,22 +102,39 @@ As Solutions
 
 <h1>Contact Us</h1>
 
-<form>
+<form onsubmit="sendWhatsApp(); return false;">
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" id="name" placeholder="Your Name" required><br><br>
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" id="email" placeholder="Your Email" required><br><br>
 
-<textarea rows="6" placeholder="Your Message"></textarea>
+<textarea id="message" placeholder="Your Message" required></textarea><br><br>
 
-<button type="submit">
-Send Message
-</button>
+<button type="submit">Send to WhatsApp</button>
+
+</form>
 
 </form>
 
 </div>
+<script>
 
+function sendWhatsApp(){
+
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var message=document.getElementById("message").value;
+
+var url="https://wa.me/918547576987?text="
++"Name: "+encodeURIComponent(name)
++"%0AEmail: "+encodeURIComponent(email)
++"%0AMessage: "+encodeURIComponent(message);
+
+window.open(url,"_blank");
+
+}
+
+</script>
 </body>
 
 </html>
