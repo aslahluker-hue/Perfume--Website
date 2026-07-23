@@ -35,34 +35,44 @@ AS <span>Mart</span>
 
 <a href="products.html">Products</a>
 
-<a href="contact.html">Contact</a>
 
-<div class="cart">🛒 Cart</div>
+
+<a href="contact.html">Contact</a>
+<li><a href="login.html">Login</a></li>
+
+<div class="cart">
+
+
+🛒 Cart (<span id="cart-count">0</span>)
+
+</div>
 
 </div>
 
 </header>
 
-<!-- Banner -->
 
-<section class="banner">
+<section class="slider">
 
-<div class="overlay">
+<div class="slides fade">
 
-<h1>Luxury Perfumes</h1>
+<img src="image/banner1.jpg">
 
-<p>Original Imported Fragrances</p>
+</div>
 
-<a href="products.html">
+<div class="slides fade">
 
-<button>Shop Now</button>
+<img src="image/banner2.jpg">
 
-</a>
+</div>
+
+<div class="slides fade">
+
+<img src="image/banner3.jpg">
 
 </div>
 
 </section>
-
 <!-- Categories -->
 
 <section class="categories">
@@ -108,53 +118,121 @@ AS <span>Mart</span>
 </section>
 
 <!-- Products -->
+<section class="offers">
 
-<section class="products">
+<h2>Today's Offers</h2>
 
-<h2>Best Sellers</h2>
+<div class="offer-box">
 
-<div class="product-box">
+<div class="offer red">
 
-<div class="product">
+<h1>50% OFF</h1>
 
-<img src="image/perfume1.jpg">
-
-<h3>Luxury Perfume</h3>
-
-<p>₹999</p>
-
-<button>Buy Now</button>
+<p>On Premium Perfumes</p>
 
 </div>
 
-<div class="product">
+<div class="offer blue">
 
-<img src="image/perfume2.jpg">
+<h1>Buy 1 Get 1</h1>
 
-<h3>Premium Perfume</h3>
-
-<p>₹1499</p>
-
-<button>Buy Now</button>
+<p>Selected Products</p>
 
 </div>
 
-<div class="product">
+<div class="offer green">
 
-<img src="image/perfume3.jpg">
+<h1>Free Delivery</h1>
 
-<h3>Royal Oud</h3>
+<p>Above ₹999</p>
 
-<p>₹1999</p>
 
-<button>Buy Now</button>
-
+<br><br>
 </div>
 
 </div>
 
 </section>
 
+<section class="products">
+
+<h2>Popular Products</h2>
+
+<div class="product-box">
+
+<div class="product">
+
+<span class="tag">SALE</span>
+
+<img src="image/perfume1.jpg">
+
+<h3>Royal Oud</h3>
+
+<p>₹999</p>
+⭐⭐⭐⭐⭐
+
+<br><br>
+
+<button onclick="addCart()">
+
+Add to Cart
+
+</button>
+
+</div>
+
+<div class="product">
+
+<span class="tag">NEW</span>
+
+<img src="image/perfume2.jpg">
+
+<h3>Blue Ocean</h3>
+
+<p>₹1299</p>
+⭐⭐⭐⭐⭐
+
+<br><br>
+
+<button>Add to Cart</button>
+
+</div>
+
+<div class="product">
+
+<span class="tag">HOT</span>
+
+<img src="image/perfume3.jpg">
+
+<h3>Black Musk</h3>
+
+<p>₹1599</p>
+⭐⭐⭐⭐⭐
+
+<br><br>
+<button>Add to Cart</button>
+
+</div>
+
+<div class="product">
+
+<span class="tag">BEST</span>
+
+<img src="image/perfume4.jpg">
+
+<h3>Golden Night</h3>
+
+<p>₹1899</p>
+⭐⭐⭐⭐⭐
+
+<br><br>
+<button>Add to Cart</button>
+
+</div>
+
+</div>
+
+</section>
 <footer>
 
 <p>© 2026 AS Mart | All Rights Reserved</p>
@@ -165,8 +243,36 @@ AS <span>Mart</span>
 
 </footer>
 
+<script src="script.js"></script>
+<a href="https://wa.me/918547576987" class="whatsapp">
+
+💬
+
+</a>
+<script>
+
+function searchProducts(){
+
+let input = document.getElementById("searchInput").value.toLowerCase();
+
+let cards = document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+let name = card.querySelector("h3").innerText.toLowerCase();
+
+if(name.includes(input)){
+    card.style.display="block";
+}else{
+    card.style.display="none";
+}
+
+});
+
+}
+
+</script>
 </body>
 
 </html>
-
 
