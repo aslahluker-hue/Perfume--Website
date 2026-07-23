@@ -82,6 +82,7 @@ background:white;
 
 .search-box input{
 width:350px;
+max-width:90%;
 padding:12px;
 border:1px solid #ccc;
 border-radius:5px;
@@ -91,10 +92,10 @@ font-size:16px;
 /* Products */
 
 .products{
-padding:30px;
+padding:20px;
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:25px;
+gap:20px;
 }
 
 .card{
@@ -113,13 +114,13 @@ transform:translateY(-5px);
 
 .card img{
 width:100%;
-height:250px;
+height:220px;
 object-fit:contain;
 }
 
 .card h3{
-margin:15px 0;
-font-size:22px;
+margin:12px 0;
+font-size:20px;
 color:#222;
 }
 
@@ -133,7 +134,7 @@ font-size:14px;
 }
 
 .price{
-font-size:24px;
+font-size:22px;
 font-weight:bold;
 margin-top:10px;
 }
@@ -142,13 +143,13 @@ margin-top:10px;
 text-decoration:line-through;
 color:gray;
 margin-left:8px;
-font-size:18px;
+font-size:16px;
 }
 
 .offer{
 color:green;
 margin-left:8px;
-font-size:15px;
+font-size:14px;
 }
 
 .card button{
@@ -167,23 +168,102 @@ font-size:16px;
 background:#d94f00;
 }
 
-.wishlist{
-position:absolute;
-top:10px;
-right:10px;
-width:38px;
-height:38px;
-border:none;
-border-radius:50%;
-background:white;
-color:red;
-font-size:20px;
-cursor:pointer;
+/* Tablet */
+
+@media(max-width:992px){
+
+.products{
+grid-template-columns:repeat(2,1fr);
 }
 
-.wishlist.active{
-background:red;
-color:white;
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+nav{
+padding:10px;
+flex-direction:column;
+height:auto;
+}
+
+nav ul{
+margin-top:10px;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.logo{
+font-size:24px;
+}
+
+.page-header h1{
+font-size:28px;
+}
+
+.search-box input{
+width:95%;
+}
+
+.products{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+padding:12px;
+}
+
+.card{
+padding:10px;
+}
+
+.card img{
+height:130px;
+}
+
+.card h3{
+font-size:15px;
+}
+
+.rating{
+font-size:11px;
+padding:3px 6px;
+}
+
+.price{
+font-size:18px;
+}
+
+.old-price{
+font-size:12px;
+}
+
+.offer{
+font-size:11px;
+display:block;
+margin-top:5px;
+margin-left:0;
+}
+
+.card button{
+padding:8px;
+font-size:13px;
+}
+
+}
+
+/* Very Small Mobile */
+
+@media(max-width:400px){
+
+.products{
+grid-template-columns:1fr;
+}
+
+.card img{
+height:180px;
+}
+
 }
 
 </style>
@@ -230,7 +310,7 @@ onkeyup="searchProducts()">
 
 <div class="card">
 
-<button class="wishlist" onclick="toggleWish(this)">❤</button>
+
 
 <img src="image/perfume1.jpg.jpeg">
 
@@ -252,7 +332,6 @@ onkeyup="searchProducts()">
 
 <div class="card">
 
-<button class="wishlist" onclick="toggleWish(this)">❤</button>
 
 <img src="image/perfume2.jpg">
 
@@ -274,7 +353,7 @@ onkeyup="searchProducts()">
 
 <div class="card">
 
-<button class="wishlist" onclick="toggleWish(this)">❤</button>
+
 
 <img src="image/perfume3.jpg">
 
@@ -296,7 +375,6 @@ onkeyup="searchProducts()">
 
 <div class="card">
 
-<button class="wishlist" onclick="toggleWish(this)">❤</button>
 
 <img src="image/perfume4.jpg">
 
@@ -348,5 +426,4 @@ card.style.display="none";
 
 </body>
 </html>
-
 
