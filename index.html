@@ -22,11 +22,8 @@ AS <span>Mart</span>
 </div>
 
 <div class="search">
-
-<input type="text" placeholder="Search perfumes...">
-
-<button>🔍</button>
-
+    <input type="text" id="searchInput" placeholder="Search perfumes..." autocomplete="off">
+    <div id="searchList" class="search-list"></div>
 </div>
 
 <div class="menu">
@@ -160,7 +157,7 @@ AS <span>Mart</span>
 
 <div class="product-box">
 
-<div class="product">
+<div class="product product-item">
 
 <span class="tag">SALE</span>
 
@@ -181,7 +178,7 @@ Add to Cart
 
 </div>
 
-<div class="product">
+<div class="product product-item">
 
 <span class="tag">NEW</span>
 
@@ -198,7 +195,7 @@ Add to Cart
 
 </div>
 
-<div class="product">
+<div class="product product-item">
 
 <span class="tag">HOT</span>
 
@@ -214,8 +211,7 @@ Add to Cart
 
 </div>
 
-<div class="product">
-
+<div class="product product-item">
 <span class="tag">BEST</span>
 
 <img src="image/perfume4.jpg">
@@ -249,30 +245,47 @@ Add to Cart
 💬
 
 </a>
+
 <script>
+const perfumes = [
+"Royal Oud",
+"Blue Ocean",
+"Black Musk",
+"Golden Night"
+];
 
-function searchProducts(){
+const input = document.getElementById("searchInput");
+const list = document.getElementById("searchList");
 
-let input = document.getElementById("searchInput").value.toLowerCase();
+input.addEventListener("keyup", function () {
 
-let cards = document.querySelectorAll(".card");
+    let value = input.value.toLowerCase();
+    list.innerHTML = "";
 
-cards.forEach(function(card){
+    if (value === "") {
+        list.style.display = "none";
+        return;
+    }
 
-let name = card.querySelector("h3").innerText.toLowerCase();
+    let result = perfumes.filter(item =>
+        item.toLowerCase().includes(value)
+    );
 
-if(name.includes(input)){
-    card.style.display="block";
-}else{
-    card.style.display="none";
-}
+    result.forEach(item => {
 
+        let div = document.createElement("div");
+        div.innerHTML = item;
+
+        div.onclick = function () {
+            input.value = item;
+            list.style.display = "none";
+        };
+
+        list.appendChild(div);
+    });
+
+    list.style.display = result.length ? "block" : "none";
 });
-
-}
-
-</script>
-</body>
+</script></body>
 
 </html>
-
