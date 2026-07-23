@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment - AS Solutions</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f2f2f2;
+}
+
+.container{
+max-width:500px;
+margin:50px auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.payment-option{
+margin:15px 0;
+font-size:18px;
+}
+
+button{
+width:100%;
+padding:14px;
+background:#000;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+background:#444;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Select Payment Method</h2>
+
+<div class="payment-option">
+<label><input type="radio" name="payment" checked> Cash on Delivery (COD)</label>
+</div>
+
+<div class="payment-option">
+<label><input type="radio" name="payment"> UPI</label>
+</div>
+
+<div class="payment-option">
+<label><input type="radio" name="payment"> Credit / Debit Card</label>
+</div>
+
+<a href="order.html">
+    <button>Place Order</button>
+</a>
+
+</div>
+
+</body>
+</html>
