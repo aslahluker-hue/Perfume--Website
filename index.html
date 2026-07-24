@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -13,7 +14,7 @@
 
 <body>
 
-<!-- Header -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
@@ -22,25 +23,30 @@ AS <span>Mart</span>
 </div>
 
 <div class="search">
-    <input type="text" id="searchInput" placeholder="Search perfumes..." autocomplete="off">
-    <div id="searchList" class="search-list"></div>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Perfumes..."
+autocomplete="off">
+
+<div id="searchList" class="search-list"></div>
+
 </div>
 
 <div class="menu">
 
-<a href="#">Home</a>
+<a href="index.html">Home</a>
 
 <a href="products.html">Products</a>
 
-
-
 <a href="contact.html">Contact</a>
-<li><a href="login.html">Login</a></li>
 
+<a href="login.html">Login</a>
 
+<div class="cart">
 
-
-
+🛒 Cart (<span id="cart-count">0</span>)
 
 </div>
 
@@ -48,29 +54,31 @@ AS <span>Mart</span>
 
 </header>
 
+<!-- ================= SLIDER ================= -->
 
 <section class="slider">
 
 <div class="slides fade">
 
-<img src="image/banner1.jpg.jpg">
+<img src="image/banner1.jpg.jpg" alt="Banner 1">
 
 </div>
 
 <div class="slides fade">
 
-<img src="image/banner2.jpg.jpg">
+<img src="image/banner2.jpg.jpg" alt="Banner 2">
 
 </div>
 
 <div class="slides fade">
 
-<img src="image/banner3.jpg.jpg">
+<img src="image/banner3.jpg.jpg" alt="Banner 3">
 
 </div>
 
 </section>
-<!-- Categories -->
+
+<!-- ================= CATEGORY ================= -->
 
 <section class="categories">
 
@@ -80,7 +88,7 @@ AS <span>Mart</span>
 
 <div class="card">
 
-<img src="image/men.jpg">
+<img src="image/men.jpg" alt="Men">
 
 <h3>Men</h3>
 
@@ -88,7 +96,7 @@ AS <span>Mart</span>
 
 <div class="card">
 
-<img src="image/women.jpg">
+<img src="image/women.jpg" alt="Women">
 
 <h3>Women</h3>
 
@@ -96,7 +104,7 @@ AS <span>Mart</span>
 
 <div class="card">
 
-<img src="image/unisex.jpg">
+<img src="image/unisex.jpg" alt="Unisex">
 
 <h3>Unisex</h3>
 
@@ -104,7 +112,7 @@ AS <span>Mart</span>
 
 <div class="card">
 
-<img src="image/gift.jpg">
+<img src="image/gift.jpg" alt="Gift Set">
 
 <h3>Gift Sets</h3>
 
@@ -114,7 +122,8 @@ AS <span>Mart</span>
 
 </section>
 
-<!-- Products -->
+<!-- ================= OFFERS ================= -->
+
 <section class="offers">
 
 <h2>Today's Offers</h2>
@@ -125,7 +134,7 @@ AS <span>Mart</span>
 
 <h1>50% OFF</h1>
 
-<p>On Premium Perfumes</p>
+<p>Premium Perfumes</p>
 
 </div>
 
@@ -141,110 +150,127 @@ AS <span>Mart</span>
 
 <h1>Free Delivery</h1>
 
-<p>Above ₹999</p>
+<p>Orders Above ₹999</p>
 
-
-<br><br>
 </div>
 
 </div>
 
 </section>
 
+<!-- ================= PRODUCTS ================= -->
+
 <section class="products">
 
-<div class="card">
-
-
+<div class="product">
 
 <img src="image/perfume1.jpg.jpeg">
 
 <h3>Luxury Perfume</h3>
 
-<div class="rating">4.5 ★</div>
+<div class="rating">★★★★☆ 4.5</div>
 
 <p class="price">
+
 ₹999
+
 <span class="old-price">₹1499</span>
+
 <span class="offer">33% OFF</span>
+
 </p>
 
 <a href="product1.html">
+
 <button>View More</button>
+
 </a>
 
 </div>
 
+<div class="product">
 
-<div class="card">
-
-
-
-<img src="image/perfume2.jpg">
+<img src="image/perfume2.jpg.jpeg">
 
 <h3>Royal Oud</h3>
 
-<div class="rating">4.6 ★</div>
+<div class="rating">★★★★★ 4.8</div>
 
 <p class="price">
+
 ₹1299
+
 <span class="old-price">₹1999</span>
+
 <span class="offer">35% OFF</span>
+
 </p>
 
 <a href="product2.html">
+
 <button>View More</button>
+
 </a>
 
 </div>
 
+<div class="product">
 
-<div class="card">
-
-
-
-<img src="image/perfume3.jpg">
+<img src="image/perfume3.jpg.jpeg">
 
 <h3>Black Musk</h3>
 
-<div class="rating">4.8 ★</div>
+<div class="rating">★★★★★ 4.9</div>
 
 <p class="price">
+
 ₹1499
+
 <span class="old-price">₹2499</span>
+
 <span class="offer">40% OFF</span>
+
 </p>
 
 <a href="product3.html">
+
 <button>View More</button>
+
 </a>
 
 </div>
 
+<div class="product">
 
-<div class="card">
-
-
-
-<img src="image/perfume4.jpg">
+<img src="image/perfume4.jpg.jpeg">
 
 <h3>Ocean Fresh</h3>
 
-<div class="rating">4.7 ★</div>
+<div class="rating">★★★★☆ 4.6</div>
 
 <p class="price">
+
 ₹899
+
 <span class="old-price">₹1399</span>
+
 <span class="offer">36% OFF</span>
+
 </p>
 
 <a href="product4.html">
+
 <button>View More</button>
+
 </a>
 
 </div>
 
-</section><footer>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
 
 <p>© 2026 AS Mart | All Rights Reserved</p>
 
@@ -254,53 +280,18 @@ AS <span>Mart</span>
 
 </footer>
 
-<script src="script.js"></script>
+<!-- ================= WHATSAPP ================= -->
+
 <a href="https://wa.me/918547576987" class="whatsapp">
 
 💬
 
 </a>
 
-<script>
-const perfumes = [
-"Royal Oud",
-"Blue Ocean",
-"Black Musk",
-"Golden Night"
-];
+<!-- ================= JAVASCRIPT ================= -->
 
-const input = document.getElementById("searchInput");
-const list = document.getElementById("searchList");
+<script src="script.js"></script>
 
-input.addEventListener("keyup", function () {
-
-    let value = input.value.toLowerCase();
-    list.innerHTML = "";
-
-    if (value === "") {
-        list.style.display = "none";
-        return;
-    }
-
-    let result = perfumes.filter(item =>
-        item.toLowerCase().includes(value)
-    );
-
-    result.forEach(item => {
-
-        let div = document.createElement("div");
-        div.innerHTML = item;
-
-        div.onclick = function () {
-            input.value = item;
-            list.style.display = "none";
-        };
-
-        list.appendChild(div);
-    });
-
-    list.style.display = result.length ? "block" : "none";
-});
-</script></body>
+</body>
 
 </html>
