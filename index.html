@@ -2,298 +2,273 @@
 <html lang="en">
 
 <head>
-<meta name="description" content="Buy premium perfumes for men, women, unisex and gift sets at AS Mart. Best quality perfumes at affordable prices.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="keywords" content="Perfume, Men Perfume, Women Perfume, Gift Set, AS Mart">
+    <meta name="description"
+        content="Buy premium perfumes for men, women, unisex and gift sets at AS Mart. Best quality perfumes at affordable prices.">
 
-<meta name="author" content="AS Mart">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Perfume, Men Perfume, Women Perfume, Unisex Perfume, Gift Set, AS Mart">
 
-<title>AS Mart</title>
+    <meta name="author" content="AS Mart">
 
-<link rel="stylesheet" href="style.css">
+    <title>AS Mart | Premium Perfumes</title>
 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+    <!-- ================= HEADER ================= -->
 
-<header>
+    <header>
 
-<div class="logo">
-AS <span>Mart</span>
-</div>
+        <div class="logo">
+            AS <span>Mart</span>
+        </div>
 
-<div class="search">
+        <div class="search">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search perfumes..."
+                autocomplete="off"
+                aria-label="Search perfumes">
 
-<input
-type="text"
-id="searchInput"
-placeholder="Search Perfumes..."
-autocomplete="off">
+            <div id="searchList" class="search-list"></div>
+        </div>
 
-<div id="searchList" class="search-list"></div>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
 
-</div>
+    </header>
 
-<div class="menu">
 
-<a href="index.html">Home</a>
+    <!-- ================= SLIDER ================= -->
 
-<a href="products.html">Products</a>
+    <section class="slider">
 
-<a href="contact.html">Contact</a>
+        <div class="slides fade">
+            <img src="image/banner1.jpg" alt="AS Mart perfume offer banner">
+        </div>
 
-<a href="login.html">Login</a>
+        <div class="slides fade">
+            <img src="image/banner2.jpg" alt="AS Mart premium perfume collection">
+        </div>
 
+        <div class="slides fade">
+            <img src="image/banner3.jpg" alt="AS Mart perfume promotion">
+        </div>
 
+    </section>
 
-</div>
 
+    <!-- ================= CATEGORIES ================= -->
 
+    <section class="categories">
 
-</header>
+        <h2>Shop By Category</h2>
 
-<!-- ================= SLIDER ================= -->
+        <div class="category-box">
 
+            <div class="card">
+                <img src="image/men.jpg" alt="Men's perfumes">
+                <h3>Men</h3>
+            </div>
 
-<section class="slider">
+            <div class="card">
+                <img src="image/women.jpg" alt="Women's perfumes">
+                <h3>Women</h3>
+            </div>
 
-<div class="slides fade">
+            <div class="card">
+                <img src="image/unisex.jpg" alt="Unisex perfumes">
+                <h3>Unisex</h3>
+            </div>
 
-<img src="image/banner1.jpg.jpg" alt="Banner 1">
+            <div class="card">
+                <img src="image/gift.jpg" alt="Perfume gift sets">
+                <h3>Gift Sets</h3>
+            </div>
 
-</div>
+        </div>
 
-<div class="slides fade">
+    </section>
 
-<img src="image/banner2.jpg.jpg" alt="Banner 2">
 
-</div>
+    <!-- ================= OFFERS ================= -->
 
-<div class="slides fade">
+    <section class="offers">
 
-<img src="image/banner3.jpg.jpg" alt="Banner 3">
+        <h2>Today's Offers</h2>
 
-</div>
+        <div class="offer-box">
 
-</section>
+            <div class="offer red">
+                <h3>50% OFF</h3>
+                <p>Premium Perfumes</p>
+            </div>
 
-<!-- ================= CATEGORY ================= -->
+            <div class="offer blue">
+                <h3>Buy 1 Get 1</h3>
+                <p>Selected Products</p>
+            </div>
 
-<section class="categories">
+            <div class="offer green">
+                <h3>Free Delivery</h3>
+                <p>Orders Above ₹999</p>
+            </div>
 
-<h2>Shop By Category</h2>
+        </div>
 
-<div class="category-box">
+    </section>
 
-<div class="card">
 
-<img src="image/men.jpg" alt="Men">
+    <!-- ================= PRODUCTS ================= -->
 
-<h3>Men</h3>
+    <section class="products">
 
-</div>
+        <!-- Product 1 -->
+        <div class="product">
 
-<div class="card">
+            <img src="image/perfume1.jpeg" alt="Luxury Perfume">
 
-<img src="image/women.jpg" alt="Women">
+            <h3>Luxury Perfume</h3>
 
-<h3>Women</h3>
+            <div class="rating">
+                ★★★★☆ <span>4.5</span>
+            </div>
 
-</div>
+            <p class="price">
+                ₹999
+                <span class="old-price">₹1,499</span>
+                <span class="offer">33% OFF</span>
+            </p>
 
-<div class="card">
+            <a href="product1.html" class="product-link">
+                View More
+            </a>
 
-<img src="image/unisex.jpg" alt="Unisex">
+        </div>
 
-<h3>Unisex</h3>
 
-</div>
+        <!-- Product 2 -->
+        <div class="product">
 
-<div class="card">
+            <img src="image/perfume2.jpeg" alt="Royal Oud Perfume">
 
-<img src="image/gift.jpg" alt="Gift Set">
+            <h3>Royal Oud</h3>
 
-<h3>Gift Sets</h3>
+            <div class="rating">
+                ★★★★★ <span>4.8</span>
+            </div>
 
-</div>
+            <p class="price">
+                ₹1,299
+                <span class="old-price">₹1,999</span>
+                <span class="offer">35% OFF</span>
+            </p>
 
-</div>
+            <a href="product2.html" class="product-link">
+                View More
+            </a>
 
-</section>
+        </div>
 
-<!-- ================= OFFERS ================= -->
 
-<section class="offers">
+        <!-- Product 3 -->
+        <div class="product">
 
-<h2>Today's Offers</h2>
+            <img src="image/perfume3.jpeg" alt="Black Musk Perfume">
 
-<div class="offer-box">
+            <h3>Black Musk</h3>
 
-<div class="offer red">
+            <div class="rating">
+                ★★★★★ <span>4.9</span>
+            </div>
 
-<h1>50% OFF</h1>
+            <p class="price">
+                ₹1,499
+                <span class="old-price">₹2,499</span>
+                <span class="offer">40% OFF</span>
+            </p>
 
-<p>Premium Perfumes</p>
+            <a href="product3.html" class="product-link">
+                View More
+            </a>
 
-</div>
+        </div>
 
-<div class="offer blue">
 
-<h1>Buy 1 Get 1</h1>
+        <!-- Product 4 -->
+        <div class="product">
 
-<p>Selected Products</p>
+            <img src="image/perfume4.jpeg" alt="Ocean Fresh Perfume">
 
-</div>
+            <h3>Ocean Fresh</h3>
 
-<div class="offer green">
+            <div class="rating">
+                ★★★★☆ <span>4.6</span>
+            </div>
 
-<h1>Free Delivery</h1>
+            <p class="price">
+                ₹899
+                <span class="old-price">₹1,399</span>
+                <span class="offer">36% OFF</span>
+            </p>
 
-<p>Orders Above ₹999</p>
+            <a href="product4.html" class="product-link">
+                View More
+            </a>
 
-</div>
+        </div>
 
-</div>
+    </section>
 
-</section>
 
-<!-- ================= PRODUCTS ================= -->
+    <!-- ================= FOOTER ================= -->
 
-<section class="products">
+    <footer>
 
-<div class="product">
+        <p>&copy; 2026 AS Mart | All Rights Reserved</p>
 
-<img src="image/perfume1.jpg.jpeg">
+        <p>
+            Email:
+            <a href="mailto:assolutions@gmail.com">
+                assolutions@gmail.com
+            </a>
+        </p>
 
-<h3>Luxury Perfume</h3>
+        <p>
+            Phone:
+            <a href="tel:+918547576987">
+                +91 85475 76987
+            </a>
+        </p>
 
-<div class="rating">★★★★☆ 4.5</div>
+    </footer>
 
-<p class="price">
 
-₹999
+    <!-- ================= WHATSAPP ================= -->
 
-<span class="old-price">₹1499</span>
+    <a
+        href="https://wa.me/918547576987"
+        class="whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contact AS Mart on WhatsApp">
+        💬
+    </a>
 
-<span class="offer">33% OFF</span>
 
-</p>
+    <!-- ================= JAVASCRIPT ================= -->
 
-<a href="product1.html">
-
-<button>View More</button>
-
-</a>
-
-</div>
-
-<div class="product">
-
-<img src="image/perfume2.jpg.jpeg">
-
-<h3>Royal Oud</h3>
-
-<div class="rating">★★★★★ 4.8</div>
-
-<p class="price">
-
-₹1299
-
-<span class="old-price">₹1999</span>
-
-<span class="offer">35% OFF</span>
-
-</p>
-
-<a href="product2.html">
-
-<button>View More</button>
-
-</a>
-
-</div>
-
-<div class="product">
-
-<img src="image/perfume3.jpg.jpeg">
-
-<h3>Black Musk</h3>
-
-<div class="rating">★★★★★ 4.9</div>
-
-<p class="price">
-
-₹1499
-
-<span class="old-price">₹2499</span>
-
-<span class="offer">40% OFF</span>
-
-</p>
-
-<a href="product3.html">
-
-<button>View More</button>
-
-</a>
-
-</div>
-
-<div class="product">
-
-<img src="image/perfume4.jpg.jpeg">
-
-<h3>Ocean Fresh</h3>
-
-<div class="rating">★★★★☆ 4.6</div>
-
-<p class="price">
-
-₹899
-
-<span class="old-price">₹1399</span>
-
-<span class="offer">36% OFF</span>
-
-</p>
-
-<a href="product4.html">
-
-<button>View More</button>
-
-</a>
-
-</div>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<p>© 2026 AS Mart | All Rights Reserved</p>
-
-<p>Email: assolutions@gmail.com</p>
-
-<p>Phone: +91 8547576987</p>
-
-</footer>
-
-<!-- ================= WHATSAPP ================= -->
-
-<a href="https://wa.me/918547576987" class="whatsapp">
-
-💬
-
-</a>
-
-<!-- ================= JAVASCRIPT ================= -->
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
